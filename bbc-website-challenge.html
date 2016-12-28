@@ -6,35 +6,39 @@
         </title>
 
         <style type="text/css">
-            body{
+            b{
                 margin:0;
-                padding-top:0px;
-                padding-left:25%;
-                padding-right:25%;
+                padding:0;
             }
-            a{
-                float:left;
-                padding:5px;
-            }
-            p{
+            .bbc{
                 margin:0;
-                padding:9px;
                 float:left;
+                padding: 5px 5px 5px 15%;
+            }
+            #header-text{
+                height:0px;
+                font-family:sans-serif;
+                text-align: center;
+                font-weight: bold;
+                font-size:13;
+                line-height: 18px;      
+            }
+            .top{
+                margin:0;
+                float:left;
+                padding: 10px;
                 border-left: 1px gray solid;
-                font-weight:bold;
-                font-family: sans-serif;
-                font-size: 13;
-                
-            }
-
+                height:20; 
             }
             #sign-in{
-                padding-right:50px;
+                margin-right:100px;
             }
             #more{
-                padding-right:30px;
+                margin-right:100px;
             }
-      
+            #search{
+                margin-right:150px;
+            }
 
             
         </style>
@@ -43,19 +47,22 @@
     
     </head>
     <body>
-        <div>
+        <div id="Main-header">
             <a class="bbc" href="bbc-website-challenge.html">
                 <img src="bbc.png" alt="home">
             </a>
-            <p id="sign-in">Sign in</p>
-            <p>News</p>
-            <p>Sport</p>
-            <p>Weather</p>
-            <p>Shop</p>
-            <p>Earth</p>
-            <p>Travel</p>
-            <p id="more">More</p>
-            <p>Search</p>
+            <div id="header-text">
+                <p id="sign-in" class="top">Sign in</p>
+                <p class="top">News</p>
+                <p class="top">Sport</p>
+                <p class="top">Weather</p>
+                <p class="top">Shop</p>
+                <p class="top">Earth</p>
+                <p class="top">Travel</p>
+                <p id="more" class="top">More</p>
+                <p id="search" class="top">Search</p>
+            
+            </div>
         </div>
     </body>
 
